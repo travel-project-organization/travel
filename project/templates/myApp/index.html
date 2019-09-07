@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Home</title>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/static/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="/static/bootstrap/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+    <link href="http://fonts.googleapis.com/css?family=Thasadith:400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+</head>
+<body>
+<div class="main-top" id="home">
+    <!-- header -->
+    <div class="headder-top">
+        <!-- nav -->
+        <nav >
+            <div id="logo">
+                <h1><a href="index.html">Arrange a tour</a></h1>
+            </div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop">
+            <ul class="menu mt-2">
+                <li class="active"><a href="index">主页</a></li>
+                <li><a href="#">功能</a></li>
+                 <li><a href="map">地图</a></li>
+                {% if request.user.is_authenticated %}
+                <li><a href="login">欢迎  {{request.user.username}}  ！</a></li>
+                <li><a href="login">注销</a></li>
+                {%else%}
+                <li><a href="login">登录</a></li>
+                {%endif%}
+            </ul>
+        </nav>
+        <!-- //nav -->
+    </div>
+    <!-- //header -->
+    <!-- banner -->
+    <div class="main-banner">
+        <div class="container">
+            <div class="style-banner ">
+                <h4 class="mb-2">规划你的行程</h4>
+                <h2 class="h2">带来轻松愉快的出行体验</h2>
+            </div>
+            <div class="two-demo-button mt-md-4 mt-3">
+                <p> Always the years between us, always love, always hour</p>
+            </div>
+            <div class="view-buttn mt-md-4 mt-sm-4 mt-3">
+                <a href="arrange" class="btn">开始规划行程</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

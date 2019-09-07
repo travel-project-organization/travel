@@ -1,0 +1,66 @@
+.Mapbody{
+    /* 设置宽度高度背景颜色 */
+    margin:5px 15px 5px 15px;
+    height: auto; /*高度改为自动高度*/
+    width:80%;
+    margin-left: 0;
+    background-color: white;
+    position: center; /*固定在顶部*/
+}
+.NavSidebar
+{
+    padding: 5px 15px 5px 15px;
+    width: 20%;
+    height: 650px;
+    background-color:#f9f9f9;
+    font-size: small;
+    position: center;
+    float:left;
+    overflow: scroll;
+}
+
+.NavSidebar h2 {
+    color:#3a8f96;
+    border-bottom: thin #6B6E3F solid;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.NavSidebar ul {
+    padding-left: 15px;
+}
+.NavSidebar p {
+    padding-bottom: 8px;
+}
+.NavSidebar1
+{
+    padding: 5px 15px 0 15px;
+    width: 15%;
+    height: 650px;
+    background-color:#f9f9f9;
+    font-size: small;
+    position: center;
+    float:right;
+    overflow: scroll;
+}
+.NavSidebar1 h2 {
+    color:#3a8f96;
+    border-bottom: thin #6B6E3F solid;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.NavSidebar1 ul {
+    padding-right: 15px;
+}
+
+.NavSidebar1 p {
+    color: black;
+    padding: 5px 15px 0 15px;
+}
+
+a{
+    font-size: 15px;
+    color: black;
+}
+a:hover {color: blue} /* 鼠标悬浮在上的链接 蓝色 */
+a:active {color: blue} /* 鼠标点中激活链接 蓝色 */

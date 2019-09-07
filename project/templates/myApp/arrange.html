@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arrange</title>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--//meta tags ends here-->
+    <!--booststrap-->
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="/static/bootstrap/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="/static/bootstrap/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+    <link href="http://fonts.googleapis.com/css?family=Thasadith:400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+    <link href="headimag.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="header-outs inner_page-banner " id="home">
+    <div class="headder-top">
+        <!--//navigation section -->
+        <!-- nav -->
+        <nav >
+            <div id="logo">
+                <h1><a href="home.html">Arrange your tour</a></h1>
+            </div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop">
+            <ul class="menu mt-2">
+                <li class="active"><a href="index">主页</a></li>
+                <li><a href="#">功能</a></li>
+                <li><a href="login">登录</a></li>
+            </ul>
+        </nav>
+        <!-- //nav -->
+    </div>
+</div>
+<!-- //Navigation -->
+<!--//headder-->
+<!-- short -->
+<div class="using-border py-3">
+    <div class="inner_breadcrumb  ml-4">
+        <ul class="short_ls">
+            <li>
+                <a href="home.html">主页</a>
+                <span>/ /</span>
+            </li>
+            <li>行程设置</li>
+        </ul>
+    </div>
+</div>
+
+<section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        <h3 class="title text-right mb-lg-5 mb-md-4 mb-sm-4 mb-3"># 行程设置</span></h3>
+        <div class="row">
+            <!--//contact-map -->
+            <div class="address_mail_footer_grids col-lg-6 col-md-6">
+                <iframe src="/static/bootstrap/images/a1.jpg"></iframe>
+            </div>
+            <!--contact-map -->
+            <div class="col-lg-6 col-md-6 contact-form-txt">
+                <form action="map.html" method="post">
+                    <div class="w3pvt-wls-contact-mid">
+                        <div class="form-group contact-forms">
+                            <select name="select" class="select">
+                                <option value="">选择城市---</option>
+                                <option>上海</option>
+                                <option>北京</option>
+                                <option>云南</option>
+                                <option>杭州</option>
+                            </select>
+                        </div>
+                        <div class="form-group contact-forms">
+                            <input type="text" class="form-control" placeholder="游玩天数" required="">
+                        </div>
+                        <button type="submit" class="btn sent-butnn" >Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
